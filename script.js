@@ -18,7 +18,7 @@ function loadTitelCard() {
 
 // List of markdown files to fetch
 const postFiles = [
-  "https://github.com/tuckers15/my_website/blob/main/posts/post1.md?plain=1",
+  "https://raw.githubusercontent.com/tuckers15/my_website/main/posts/post1.md",
 ]; // Add more as needed
 
 const postsList = document.getElementById("posts-list");
