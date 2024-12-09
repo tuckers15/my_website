@@ -21,7 +21,6 @@ const postFiles = ["posts/post1.md"]; // Add more as needed
 
 const postsList = document.getElementById("posts-list");
 
-// Function to fetch and process a Markdown file
 async function fetchAndProcessPost(file) {
   try {
     const response = await fetch(file);
@@ -32,13 +31,18 @@ async function fetchAndProcessPost(file) {
     const yamlPart = markdown.substring(3, yamlEnd);
     const bodyPart = markdown.substring(yamlEnd + 3).trim();
 
+    // Load metadata and extract fields
     const metadata = jsyaml.load(yamlPart);
     const title = metadata.title || "Untitled";
+    const link = metadata.link || "#";
     const snippet = bodyPart.split(/\s+/).slice(0, 60).join(" ") + "...";
 
-    // Create and insert the list item
+    // Create and insert the list item with a link
     const listItem = document.createElement("li");
-    listItem.innerHTML = `<h2>${title}</h2><p>${snippet}</p>`;
+    listItem.innerHTML = `
+      <h2><a href="${link}" target="_blank">${title}</a></h2>
+      <p>${snippet}</p>
+    `;
     postsList.appendChild(listItem);
   } catch (error) {
     console.error(`Error fetching ${file}:`, error);
