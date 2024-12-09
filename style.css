@@ -47,22 +47,64 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+/* Navigation Menu */
 .navigation {
     display: flex;
     padding: 0.25rem;
     justify-content: center;
-    background-color: #635D5C
-    
+        
+    background-color: #635D5C; /* Darker background for the navbar */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
 }
 
+/* Navigation List Items */
 .navigation li {
     list-style: none;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 0 2rem; /* More controlled spacing inside each list item */
     flex-grow: 1; /* Each list item grows to take available space */
-    text-align: center; /* Center the content in each item */
+    text-align: center; /* Centers the content in each item */
+    font-size: 1.2rem; /* Slightly larger text */
+    font-weight: 600; /* Bold text for better visibility */
+    color: var(--clr-link); /* Default text color */
+    cursor: pointer; /* Shows pointer on hover */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
+
+.navigation a:link, /* For unvisited links */
+.navigation a:visited { /* For visited links */
+    color: inherit; /* Keep the inherited color */
+}
+
+/* Navigation Hover Effect */
+.navigation li:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Add underline on hover for a modern feel */
+.navigation li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #ffcc00; /* Underline color */
+    transition: width 0.3s ease; /* Smooth underline transition */
+}
+
+.navigation li:hover::after {
+    width: 100%; /* Underline expands on hover */
+}
+
+/* Optional: Customize colors easily via CSS variables */
+:root {
+    --clr-link: #F1C27D;
+    --clr-primary: #ffcc00; /* Highlight color */
+}
+
 
 
 /* Title Card Styling */
