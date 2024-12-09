@@ -138,23 +138,13 @@ body {
     --clr-primary: #ffcc00; /* Highlight color */
 }
 
-
-
-/* Title Card Styling */
-.title-card {
-    padding: 2rem;
-    text-align: left;
-    border-bottom: 2px solid #ccc;
-    background-color: #635D5C;
-
-}
 /* Social Media Links Container */
 .socials {
     display: flex;
     list-style: none; /* Removes default bullets */
     padding: 0;
     margin: 0;
-    margin-top: 3rem;
+    margin-top: 1rem;
     justify-content: left; /* Centers the icons horizontally */
     gap: 1.5rem; /* Adds equal spacing between icons */
     width: auto; /* Remove fixed width */
@@ -223,6 +213,15 @@ body {
     width: 250px;
 }
 
+/* Title Card Styling */
+.title-card {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    background-color: #635D5C;
+    color: #B2BEB5;
+
+}
 /* Content Area Styling */
 .content {
     background-color: #f9f9f9;
