@@ -1,0 +1,164 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Me Content Box Styling */
+.about-me-content {
+    background-color: #f4f4f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Inner padding */
+    margin: 20px auto; /* Center horizontally with spacing */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    color: #333; /* Dark text color for readability */
+}
+
+.about-me-content h3 {
+    font-size: 24px; /* Larger font for the heading */
+    font-weight: bold;
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.about-me-content p {
+    font-size: 16px; /* Slightly larger font for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    color: #555; /* Lighter text color */
+    text-align: justify; /* Justify text for neat alignment */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Optional: Add a subtle hover effect for a more interactive feel */
+.about-me-content:hover {
+    background-color: #eaeaea; /* Slightly darker background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+
+/* Ensure body takes up the full height of the viewport */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    padding: 0.25rem;
+    justify-content: center;
+    background-color: #635D5C
+    
+}
+
+.navigation li {
+    list-style: none;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    flex-grow: 1; /* Each list item grows to take available space */
+    text-align: center; /* Center the content in each item */
+}
+
+
+/* Title Card Styling */
+.title-card {
+    padding: 2rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    background-color: #635D5C;
+
+}
+/* Social Media Links Container */
+.socials {
+    display: flex;
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+    justify-content: left; /* Centers the icons horizontally */
+    gap: 1.5rem; /* Adds equal spacing between icons */
+    width: auto; /* Remove fixed width */
+}
+
+/* Individual Social Link Item */
+.socials li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For absolute positioning of the hover effect */
+    font-size: 2rem; /* Larger icons for better visibility */
+    color: var(--clr-white); /* Default color */
+    cursor: pointer;
+    -webkit-transition: transform 0.3s ease, color 0.3s ease; /* Smooth transform and color transitions */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials li:hover {
+    transform: translateY(-5px); /* Slightly lifts the icon on hover */
+    color: var(--clr-primary); /* Change the icon color on hover */
+}
+
+/* Optional: Adding an underline on hover for a nice effect */
+.socials li::after {
+    content: ''; /* No text, just the line */
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--clr-primary); /* Underline color */
+    bottom: -5px; /* Position it just below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.socials li:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Optional: Icons themselves */
+.socials li i { 
+    font-size: 2rem; /* Adjust icon size */
+}
+
+/* Customize color variables for easy adjustments */
+:root {
+    --clr-white: #ffffff;
+    --clr-primary: #ffcc00; /* Highlight color */
+    --transition: all 0.3s ease;
+}
+
+
+/* Main Content Area with Flexbox */
+.main-content {
+    display: flex;
+    flex: 1; /* Fills the remaining vertical space */
+    padding: 2rem;
+    gap: 1rem;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #ddd;
+    padding: 1rem;
+    width: 250px;
+}
+
+/* Content Area Styling */
+.content {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    flex: 1; /* Allows the content area to expand */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
