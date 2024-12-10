@@ -14,6 +14,7 @@
     margin: 20px auto; /* Center horizontally with spacing */
     font-family: 'Arial', sans-serif; /* Clean and modern font */
     color: #333; /* Dark text color for readability */
+    max-width: 1000px;
 }
 
 .about-me-content h3 {
@@ -29,7 +30,8 @@
     line-height: 1.6; /* Increased line height for better readability */
     color: #555; /* Lighter text color */
     text-align: justify; /* Justify text for neat alignment */
-    margin-bottom: 20px; /* Space below the paragraph */
+    margin-bottom: 1rem; /* Space below the paragraph */
+    margin-top: 1rem;
 }
 
 /* Optional: Add a subtle hover effect for a more interactive feel */
@@ -38,6 +40,7 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+
 
 
 /* Ensure body takes up the full height of the viewport */
@@ -204,6 +207,10 @@ body {
     flex: 1; /* Fills the remaining vertical space */
     padding: 2rem;
     gap: 1rem;
+}
+
+.recent-posts{
+    margin-bottom: 15rem;
 }
 
 /* Sidebar Styling */
