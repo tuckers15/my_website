@@ -25,8 +25,15 @@
     text-align: center; /* Center the heading */
 }
 
+.about-me-content h4 {
+    font-size: 24px; /* Larger font for the heading */
+    font-weight: bold;
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
 .about-me-content p {
-    font-size: 16px; /* Slightly larger font for readability */
+    font-size: 20px; /* Slightly larger font for readability */
     line-height: 1.6; /* Increased line height for better readability */
     color: #555; /* Lighter text color */
     text-align: justify; /* Justify text for neat alignment */
@@ -210,7 +217,7 @@ body {
 }
 
 .recent-posts{
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 /* Sidebar Styling */
