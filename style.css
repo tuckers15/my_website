@@ -18,7 +18,7 @@
 }
 
 .about-me-content h3 {
-    font-size: 24px; /* Larger font for the heading */
+    font-size: 26px; /* Larger font for the heading */
     font-weight: bold;
     color: #333; /* Dark color for the heading */
     margin-bottom: 15px; /* Space below the heading */
@@ -26,14 +26,14 @@
 }
 
 .about-me-content h4 {
-    font-size: 24px; /* Larger font for the heading */
+    font-size: 22px; /* Larger font for the heading */
     font-weight: bold;
     color: #333; /* Dark color for the heading */
     margin-bottom: 15px; /* Space below the heading */
 }
 
 .about-me-content p {
-    font-size: 20px; /* Slightly larger font for readability */
+    font-size: 18px; /* Slightly larger font for readability */
     line-height: 1.6; /* Increased line height for better readability */
     color: #555; /* Lighter text color */
     text-align: justify; /* Justify text for neat alignment */
@@ -57,6 +57,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+
 
 .main-content-projects{
     display: flex;
@@ -213,7 +215,8 @@ body {
     display: flex;
     flex: 1; /* Fills the remaining vertical space */
     padding: 2rem;
-    gap: 1rem;
+    gap: 5rem;
+    
 }
 
 .recent-posts{
