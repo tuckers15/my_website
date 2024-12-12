@@ -219,6 +219,12 @@ body {
     
 }
 
+@media (max-width: 768px) { /* adjust the breakpoint as needed */
+    .main-content {
+      flex-direction: column;
+    }
+  }
+
 .recent-posts{
     margin-bottom: 5rem;
 }
