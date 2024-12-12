@@ -18,7 +18,7 @@
 }
 
 .about-me-content h3 {
-    font-size: 26px; /* Larger font for the heading */
+    font-size: 2em; /* Larger font for the heading */
     font-weight: bold;
     color: #333; /* Dark color for the heading */
     margin-bottom: 15px; /* Space below the heading */
@@ -26,19 +26,24 @@
 }
 
 .about-me-content h4 {
-    font-size: 22px; /* Larger font for the heading */
+    font-size: 1.6em; /* Larger font for the heading */
     font-weight: bold;
     color: #333; /* Dark color for the heading */
     margin-bottom: 15px; /* Space below the heading */
 }
 
 .about-me-content p {
-    font-size: 18px; /* Slightly larger font for readability */
-    line-height: 1.6; /* Increased line height for better readability */
+    
+    
     color: #555; /* Lighter text color */
     text-align: justify; /* Justify text for neat alignment */
     margin-bottom: 1rem; /* Space below the paragraph */
     margin-top: 1rem;
+
+    font-size: 1.2em;
+    line-height: 1.8;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Optional: Add a subtle hover effect for a more interactive feel */
